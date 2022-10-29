@@ -1,18 +1,92 @@
 <!DOCTYPE html>
 <html>
     <head>
-       full form  
+       <title> form </title> 
     </head>
-    <body>
-        <h2>online booking</h2>
-        <forum method="post" action="save.php"></forum>
-        <p>Name<fornt color="red">*</fornt>
-        <input type="text" name="Customer name" size="25" maxlength="40"placeholder="K.M.S Kumara"required>
-        </p>
-        <p>phone</p><fornt color="red">*</fornt>
-        <input type="text" name="phone_number"placeholder="07xxxxxxxx">
-        </p>
-        <p>Email<fornt color="red">*</fornt>
-        <input type="email"</p>
+    <body background="">
+        <Center><h2>online booking</h2>
+        <form method="post" action="save.php">
+        <table cellpadding=5 cellcapacity=5 bgcolor="#00dfec">
+        <tr>
+            <td>Name<fornt color="red">*</fornt></td>
+            <td><input type="text" name="Customer name" size="25" maxlength="40"placeholder="K.M.S Kumara" required></td>
+        </tr>
+        <tr>
+            <td>phone<fornt color="red">*</fornt></td>
+            <td><input type="text" name="phone_number"placeholder="07xxxxxxxx"></td>
+        </tr>
+        <tr>
+            <td>Email<fornt color="red">*</fornt></td>
+            <td><input type="email" name="email_address"placeholder="abc@example.com"></td>
+        </tr>
+        <tr><td> taxi do you required<fornt color="red">*</fornt></td>
+            <td><input type="radio" name="vehicle" value="car">car</td>
+            <td><input type="radio" name="vehicle" value="van">van</td>
+            <td><input type="radio" name="vehicle" value="tuktuk">tuktuk</td>
+            <td><input type="radio" name="vehicle" value="bus">bus</td>
+        </tr>
+        <tr>
+            <td>extars</td>
+            <td><input type="checkbox"name="extars1"value="baby">baby seat</td>
+            <td><input type="checkbox"name="extars2"value="whell chair">whell chair</td>
+            <td><input type="checkbox"name="extars3"value="stock tip">stock tip</td>
+        </tr>
+        <tr>
+            <td>pickup date</td>
+            <td><input type="date"name="pickup_date"</td>
+        </tr>
+        <tr aria-setsize="5">
+            <td>pickup place<fornt color="red">*</fornt></td>
+            <td><select name="pickup place">
+            <option value="Selected">select</option>
+            <option value="Colombo">Colombo</option>
+            <option value="kaluthara">kaluthara</option>
+            <option value="galle">galle</option>
+            <option value="matara">matara</option>
+            <option value="hambantotha">hambantotha</option>
+            <option value="monaragala">monaragala</option>
+            <option value="ampara">ampara</option>
+            <option value="batticaloa">batticaloa</option>
+            <option value="trincomalee">hambantotha</option>
+            <option value="mulative">mulative</option>
+            <option value="jaffna">jaffna</option>
+            <option value="mannarr">mannarr</option>
+            <option value="anuradapura">anuradapura</option>
+            <option value="polonnaruwa">polonnaruwa</option>
+            <option value="kurunagala">kurunagala</option>
+            <option value="mahanuwara">mahanuwara</option>
+            <option value="matale">matale</option>
+            <option value="kegalle">kegalle</option>
+            <option value="badulla">badulla</option>
+            <option value="rathnapura">rathnapura</option>
+            <option value="nuwaraeliya">nuwaraeliya</option>
+            <option value="wawniya">hambantotha</option>
+            <option value="putthalama">putthalama</option>
+            <option value="gampaha">gampaha</option>
+            <option value="kilinochchi">hambantotha</option>
+            </select></td>
+        </tr>
+        <tr>
+        <td>Dropoff place<fornt color="red">*</fornt></td>
+        <td><input type="text"name="Dropoff_place" list="destination">
+        <datalist id="destination">
+        <option value="official booking"></option>
+        <option value="trip booking"></option>
+        <option value="other booking"></option>
+        </datalist>
+        </td>
+        </td>
+        </tr>
+        <tr>
+            <td>special instruction</td>
+            <td><textarea name="comments" cols="30" rows="4" maxlength="500"></textarea></td>
+        </tr>
+        <tr>
+            <td><input type="reset"value="clear form"</td>
+            <td><input type="submit"value="submit booking"></td>
+        </tr>
+        </table>
+</Center>
+    </forum>
     </body>
 </html>
